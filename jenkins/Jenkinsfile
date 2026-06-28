@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                sh 'echo Repository downloaded successfully'
+                bat 'echo Repository downloaded successfully'
 
             }
 
@@ -18,7 +18,7 @@ pipeline {
 
             steps {
 
-                sh 'echo Jenkins pipeline execution successful'
+                bat 'echo Jenkins pipeline execution successful'
 
             }
 
@@ -28,7 +28,7 @@ pipeline {
 
             steps {
 
-                sh 'echo Docker build stage triggered'
+                bat 'echo Docker build stage triggered'
 
             }
 
