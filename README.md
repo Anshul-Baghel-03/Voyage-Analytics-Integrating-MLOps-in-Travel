@@ -1,6 +1,11 @@
 # Voyage-Analytics-Integrating-MLOps-in-Travel
 
-## Project Overview
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## 📖 Introduction:
+This project focuses on leveraging data analytics and machine learning to revolutionize travel and tourism experiences. Using datasets on users, flights, and hotels, we aim to build and deploy models for predicting flight prices, classifying user gender, and recommending hotels.
+
+## 📋 Project Overview
 
 Voyage Analytics is an end-to-end MLOps project designed to
 analyze travel data and deploy machine learning solutions
@@ -19,7 +24,7 @@ The project includes:
 - Apache Airflow Automation
 - Jenkins CI/CD Pipeline
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -35,29 +40,30 @@ The project includes:
 | Jenkins | CI/CD |
 | GitHub | Version Control |
 
-## Project Architecture
 
-User
-↓
-Streamlit Dashboard
-↓
-Flask REST APIs
-↓
-Docker Containers
-↓
-Kubernetes Cluster
-↓
-Machine Learning Models
-↓
-MLflow Tracking
-↓
-Airflow Automation
-↓
-Jenkins CI/CD Pipeline
+## 🏗️ Project Architecture
 
-## Dataset Information
+```mermaid
+flowchart TD
 
-### Users Dataset
+    U[👤 User] --> S[📊 Streamlit Dashboard]
+    S --> F[🔌 Flask REST APIs]
+    F --> D[🐳 Docker Containers]
+    D --> K[☸️ Kubernetes Cluster]
+
+    K --> M[🤖 Machine Learning Models]
+
+    M --> R[📈 Flight Price Prediction]
+    M --> C[👤 Gender Classification]
+    M --> H[🏨 Hotel Recommendation System]
+
+    M --> ML[📊 MLflow Tracking]
+    ML --> A[🔄 Apache Airflow Automation]
+    A --> J[🚀 Jenkins CI/CD Pipeline]
+```
+## 📂 Dataset Information
+
+### 👥 Users Dataset
 
 - User identifier
 - Company
@@ -65,7 +71,7 @@ Jenkins CI/CD Pipeline
 - Gender
 - Age
 
-### Flights Dataset
+### ✈️ Flights Dataset
 
 - Flight origin and destination
 - Flight type
@@ -74,31 +80,31 @@ Jenkins CI/CD Pipeline
 - Distance
 - Agency
 
-### Hotels Dataset
+### 🏨 Hotels Dataset
 
 - Hotel name
 - Location
 - Stay duration
 - Pricing
 
-## Machine Learning Models
+## 🤖 Machine Learning Models
 
-### Regression Model
+### 📈 Regression Model
 
 - RandomForestRegressor
 - Predicts flight prices
 
-### Classification Model
+### 🧑‍🤝‍🧑 Classification Model
 
 - RandomForestClassifier
 - Predicts user gender
 
-### Recommendation System
+### ⭐ Recommendation System
 
 - Content-Based Recommendation
 - Cosine Similarity
 
-## API Endpoints
+## 🔌 API Endpoints
 
 | Endpoint | Method | Purpose |
 |---|---|---|
@@ -106,49 +112,49 @@ Jenkins CI/CD Pipeline
 | /predict-gender | POST | Predict gender |
 | /recommend-hotels | POST | Recommend hotels |
 
-## Installation Steps
+## ⚙️ Installation Steps
 
-### Clone Repository
+### 📥 Clone Repository
 
 git clone <repository_link>
 
-### Create Virtual Environment
+### 🐍 Create Virtual Environment
 
 python -m venv venv
 
-### Activate Environment
+### ▶️ Activate Environment
 
 venv\\Scripts\\activate
 
-### Install Requirements
+### 📦 Install Requirements
 
 pip install -r requirements.txt
 
-### Run Flask API
+### 🚀 Run Flask API
 
 python api/app.py
 
-### Run Streamlit
+### 📊 Run Streamlit
 
 streamlit run streamlit_app/app.py
 
-## Docker Commands
+## 🐳 Docker Commands
 
-### Build Docker Image
+### 🏗️ Build Docker Image
 
 docker build -t voyageanalytics .
 
-### Run Container
+### ▶️ Run Container
 
 docker run -p 5000:5000 voyageanalytics
 
-## Kubernetes Commands
+## ☸️ Kubernetes Commands
 
 kubectl apply -f kubernetes/deployment.yaml
 
 kubectl apply -f kubernetes/service.yaml
 
-## Apache Airflow
+## 🔄 Apache Airflow
 
 Apache Airflow is used to automate:
 
@@ -156,7 +162,7 @@ Apache Airflow is used to automate:
 - Model training
 - Model evaluation
 
-## Jenkins CI/CD
+## 🚀 Jenkins CI/CD
 
 Jenkins pipeline automates:
 
@@ -165,7 +171,7 @@ Jenkins pipeline automates:
 - Docker image building
 - CI/CD workflow
 
-## Future Improvements
+## 🔮 Future Improvements
 
 - Cloud Deployment
 - User Authentication
