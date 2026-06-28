@@ -116,7 +116,7 @@ flowchart TD
 
 ### 📥 Clone Repository
 
-git clone <repository_link>
+git clone https://github.com/Anshul-Baghel-03/Voyage-Analytics-Integrating-MLOps-in-Travel.git
 
 ### 🐍 Create Virtual Environment
 
